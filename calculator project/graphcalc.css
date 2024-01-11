@@ -1,0 +1,65 @@
+body {/* desining body*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*adding background */
+    background-color: rgba(0,0,0,0.5);
+    background-image: url('calcupic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+
+}
+
+.calculator {/* body part of calculator*/
+    width: 300px;
+    border: 4px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+}
+
+#display {/*display of calculator */
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: #291f1f;
+    color: white;
+}
+
+.buttons {/*buttons of the calculator */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background-color: #49a44c;
+    color: white;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #119017;
+    transform: scale(1.05);
+}
+
+button.operator {
+    background-color: #f44336;
+}
+
+button.operator:hover {
+    background-color: #d32f2f;
+}
+#title{/*title */
+    padding: 15%;
+}
